@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 100px;
+      background-color: #ddd;
+    }
+    </style>
+  </head>
+  <body>
+    default text
+    <script>
+      var body = document.body
+      var height = window.innerHeight
+      var width = window.innerWidth
+      body.textContent = width + " x " + height
+
+      window.onresize = function() {
+        var body = document.body
+        var height = window.innerHeight
+        var width = window.innerWidth
+        body.textContent = width + " x " + height
+      }
+    </script>
+  </body>
+
+</html>
